@@ -25,19 +25,133 @@ function Heroswiper() {
                     onSlideChange={() => console.log('slide change')}
                 >
 
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/236-420x480.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/236-420x480.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/616-400x500.jpg" alt="" /></SwiperSlide>
-                    <SwiperSlide><img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/236-420x480.jpg" alt="" /></SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
 
-                    {/* <div className="flex-row d-flex">
-                        
-                    <button className="btn btn-primary swiper-button-next"></button>
-                <button className="btn btn-primary swiper-button-prev">Prev</button>
-                    </div> */}
+
                 </Swiper>
+                <Swiper
+                    // install Swiper modules
+                    modules={[Navigation, Pagination, Scrollbar, A11y]}
+                    spaceBetween={50}
+                    slidesPerView={3}
+                    // navigation
+                    pagination={{ clickable: false }}
+                    scrollbar={{ draggable: true }}
+                    onSwiper={(swiper) => console.log(swiper)}
+                    onSlideChange={() => console.log('slide change')}
+                >
+
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+                    <SwiperSlide><div class="card" style={{ width: "18rem" }}>
+                        <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/324-400x500.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    </SwiperSlide>
+
+
+                </Swiper>
+
 
             </div>
         </>

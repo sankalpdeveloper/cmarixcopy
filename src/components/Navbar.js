@@ -4,204 +4,128 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <div>
-     
-     <nav
-  class="navbar navbar-expand-lg navbar-light bg-light"
->
-  
-  <div class="container-fluid">
-   
-    <button
-      class="navbar-toggler px-0"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarExample1"
-      aria-controls="navbarExample1"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
-    </button>
+    <div className="container">
 
-
-    <div
-      class="collapse navbar-collapse"
-      id="navbarExample1"
-    >
-      
-      <ul
-        class="navbar-nav me-auto ps-lg-0"
-        style={{paddingLeft: "0.15rem"}}
-      >
-        <li class="nav-item">
-          <a class="nav-link" href="#">Regular link</a>
-        </li>
-        
-        <li class="nav-item dropdown position-static">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-mdb-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Mega menu
-          </a>
-          
-          <div
-            class="dropdown-menu w-100 mt-0"
-            aria-labelledby="navbarDropdown"
-            style={{
-              borderTopLeftRadius: "0",
-              borderTopRightRadius: "0"
-            }}
-          >
-            <div class="container">
-              <div class="row my-4">
-                <div
-                  class="col-md-6 col-lg-3 mb-3 mb-lg-0"
-                >
-                  <div
-                    class="list-group list-group-flush"
-                  >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Lorem ipsum</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Dolor sit</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Amet consectetur</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Cras justo odio</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Adipisicing elit</a
-                    >
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 col-lg-3 mb-3 mb-lg-0"
-                >
-                  <div
-                    class="list-group list-group-flush"
-                  >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Explicabo voluptas</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Perspiciatis quo</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Cras justo odio</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Laudantium maiores</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Provident dolor</a
-                    >
-                  </div>
-                </div>
-                <div
-                  class="col-md-6 col-lg-3 mb-3 mb-md-0"
-                >
-                  <div
-                    class="list-group list-group-flush"
-                  >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Iste quaerato</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Cras justo odio</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Est iure</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Praesentium</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Laboriosam</a
-                    >
-                  </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                  <div
-                    class="list-group list-group-flush"
-                  >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Cras justo odio</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Saepe</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Vel alias</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Sunt doloribus</a
-                    >
-                    <a
-                      href=""
-                      class="list-group-item list-group-item-action"
-                      >Cum dolores</a
-                    >
-                  </div>
-                </div>
+      <nav className="shadow navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Cmarix Technolabs <span className="badge bg-primary"></span></a>
+          <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+            <div className="hamburger-toggle">
+              <div className="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
               </div>
             </div>
+          </button>
+          <div className="collapse navbar-collapse" id="navbar-content">
+            <ul className="mb-2 mr-auto navbar-nav mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li className="nav-item dropdown dropdown-mega position-static">
+                <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu_1</a>
+                <div className="shadow dropdown-menu">
+                  <div className="px-4 mega-content">
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>Title</h5>
+                          <div className="list-group">
+                            <a className="list-group-item" href="#">Mega Menu Link143</a>
+                            <a className="list-group-item" href="#">Mega Menu Link212</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                            <a className="list-group-item" href="#">Mega Menu Link312</a>
+                          </div>
+                        </div>
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>title</h5>
+                          <div className="card">
+                            <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/396690.png" className="img-fluid" alt="image" />
+                            <div className="card-body">
+                              <p className="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, alias? Voluptas hic impedit nulla autem ipsa quis nobis sed, eligendi atque sequi expedita esse exercitationem harum reiciendis repudiandae, aliquam laudantium.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>Title</h5>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum reprehenderit ratione sit minima harum quibusdam, aliquam, qui aut ipsum sint molestias. Doloribus alias eum harum dolores deserunt dicta explicabo praesentium!</p>
+                        </div>
+                        <div className="py-4 col-12 col-sm-12 col-md-3">
+                          <h5>Title</h5>
+                          <div className="list-group">
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="nav-item dropdown dropdown-mega position-static">
+                <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu2</a>
+                <div className="shadow dropdown-menu">
+                  <div className="px-4 mega-content">
+                    <div className="container-fluid">
+                      <div className="row">
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>Title</h5>
+                          <div className="list-group">
+                            <a className="list-group-item" href="#">Mega Menu Link</a>
+                            <a className="list-group-item" href="#">Mega Menu Link</a>
+                            <a className="list-group-item" href="#">Mega Menu Link</a>
+                          </div>
+                        </div>
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>Card Title</h5>
+                          <div className="card">
+                            <img src="https://fileupload1999.s3.ap-south-1.amazonaws.com/396690.png" className="img-fluid" alt="image" />
+                            <div className="card-body">
+                              <p className="card-text">Description goes here...</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="py-4 col-12 col-sm-4 col-md-3">
+                          <h5>Title</h5>
+                          <p>Description goes here...</p>
+                        </div>
+                        <div className="py-4 col-12 col-sm-12 col-md-3">
+                          <h5>Title</h5>
+                          <div className="list-group">
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                            <a className="list-group-item" href="#">Menu Link</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+
           </div>
-        </li>
-      </ul>
-     
-    </div>
-    
-  </div>
-  
-</nav>
- 
+        </div>
+      </nav>
 
     </div>
   )
