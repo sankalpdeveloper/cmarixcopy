@@ -1,10 +1,12 @@
-import React from 'react'
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import React, { useState } from 'react'
+import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css'
 
-
+SwiperCore.use([Navigation]);
 function Heroswiper() {
+    const [firstSwiper, setFirstSwiper] = useState(null);
+    const [secondSwiper, setSecondSwiper] = useState(null);
     return (
         <>
             <div className="container mt-4 mb-4 h-50 w-75">
@@ -18,7 +20,10 @@ function Heroswiper() {
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={3}
-                    // navigation
+                    navigation={true}
+                    // modules={[Controller]}
+                    // onSwiper={setFirstSwiper}
+                    // controller={{ control: secondSwiper }}
                     pagination={{ clickable: false }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
@@ -79,6 +84,10 @@ function Heroswiper() {
                         </div>
                     </div>
                     </SwiperSlide>
+                    {/* <div class="swiper-pagination">
+                     <div class="swiper-button-prev">Prev</div>
+                    <div class="swiper-button-next">Next</div>
+                    </div> */}
 
 
                 </Swiper>
@@ -87,7 +96,10 @@ function Heroswiper() {
                     modules={[Navigation, Pagination, Scrollbar, A11y]}
                     spaceBetween={50}
                     slidesPerView={3}
-                    // navigation
+                    navigation
+                    // modules={[Controller]}
+                    // onSwiper={setSecondSwiper}
+                    // controller={{ control: firstSwiper }}
                     pagination={{ clickable: false }}
                     scrollbar={{ draggable: true }}
                     onSwiper={(swiper) => console.log(swiper)}

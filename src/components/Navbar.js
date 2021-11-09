@@ -81,7 +81,7 @@ function Navbar() {
                 </div>
               </li>
               <li className="nav-item dropdown dropdown-mega position-static">
-                <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu2</a>
+                <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">Megamenu_2</a>
                 <div className="shadow dropdown-menu">
                   <div className="px-4 mega-content">
                     <div className="container-fluid">
